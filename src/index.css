@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'remixicon/fonts/remixicon.css';
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #0201BF, #6D38FF);
+}
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(2 1 191 / var(--tw-bg-opacity, 1));
+}
+.bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(80 242 253 / var(--tw-bg-opacity, 1));
+}
+.btn-primary {
+    background: linear-gradient(90deg, #0201BF, #6D38FF);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.\!rounded-button {
+    border-radius: 8px !important;
+}
+.rounded-r-lg {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.rounded-l-lg {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0201BF;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.rounded {
+    border-radius: 8px;
+}
+.rounded-lg {
+    border-radius: 16px;
+}
+.bg-primary\/10 {
+    background-color: rgb(2 1 191 / 0.1);
+}
+.text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(2 1 191 / var(--tw-text-opacity, 1));
+}
+.btn-secondary {
+    background: linear-gradient(90deg, #50F2FD, #D11DD9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bg-primary\/80 {
+    background-color: rgb(2 1 191 / 0.8);
+}
+.custom-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.custom-checkbox:checked {
+    background-color: #0201BF;
+}
