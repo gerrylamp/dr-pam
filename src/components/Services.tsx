@@ -8,46 +8,64 @@ import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 
 const serviceData = [
   {
-    title: "Balance Body Mind",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img1,
-    icon: "flaticon-medical",
+    title: "Business Services",
+    desc: "Professional support to streamline operations, manage growth, and achieve business goals with confidence.",
+    img: assets.BusinessServices,
+    icon: assets.BusinessServicesIcon,
   },
   {
-    title: "Physical Activity",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img2,
-    icon: "flaticon-sports",
+    title: "Personal Development",
+    desc: "Tailored coaching programs to help you grow, gain clarity, and reach your full potential in life and career.",
+    img: assets.PersonalDevelopment,
+    icon: assets.PersonalDevelopmentIcon,
   },
   {
-    title: "Support & Motivation",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img3,
-    icon: "flaticon-line",
+    title: "Coaching",
+    desc: "Personalized coaching to inspire transformation, build resilience, and support sustained progress.",
+    img: assets.Coaching,
+    icon: assets.CoachingIcon,
   },
   {
-    title: "Exercise Program",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img4,
-    icon: "flaticon-people",
+    title: "Pastoral Counseling",
+    desc: "Faith-informed counseling to nurture emotional, spiritual, and relational well-being.",
+    img: assets.PastoralCounseling,
+    icon: assets.PastoralCounselingIcon,
   },
   {
-    title: "Exercise Program",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img4,
-    icon: "flaticon-people",
+    title: "Meditation",
+    desc: "Guided meditation sessions to cultivate mindfulness, focus, and inner peace in a busy world.",
+    img: assets.Meditation,
+    icon: assets.MeditationIcon,
   },
   {
-    title: "Exercise Program",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img4,
-    icon: "flaticon-people",
+    title: "Anger Management",
+    desc: "Strategies to identify triggers, manage emotional responses, and build healthier relationships.",
+    img: assets.AngerManagement,
+    icon: assets.AngerManagementIcon,
   },
   {
-    title: "Exercise Program",
-    desc: "Finding a workout is as easy as scrolling down, picking out the session that matches.",
-    img: assets.img4,
-    icon: "flaticon-people",
+    title: "Publishing",
+    desc: "Support for authors and speakers in editing, designing, and launching impactful publications.",
+    img: assets.Publishing,
+    icon: assets.PublishingIcon,
+  },
+  {
+    title: "Notary Services",
+    desc: "Trusted and efficient notarial services for personal and business documentation.",
+    img: assets.NotaryServices,
+    icon: assets.NotaryServicesicon,
+  },
+  {
+    title: "Training",
+    desc: "Engaging workshops and programs to upskill teams and empower individual performance.",
+    img: assets.Training,
+    icon: assets.TrainingIcon,
+  },
+  {
+    title: "Spiritual Connection",
+    desc: "Sessions that help you reconnect with your values, purpose, and inner wisdom.",
+    img: assets.SpiritualConnection,
+    icon: assets.SpiritualConnectionicon,
   },
 ];
 
@@ -71,7 +89,7 @@ export const Services = () => {
         <div className="flex items-center justify-between flex-wrap mb-10">
           <div>
             <h3 className="text-lg text-blue-600 uppercase courgette-regular">What We Do</h3>
-            <h1 className="text-3xl font-bold">Our Services</h1>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Our Services</h1>
           </div>
           <div className="flex space-x-3 mt-4 md:mt-0">
             <button
@@ -114,7 +132,7 @@ export const Services = () => {
             <SwiperSlide key={idx}>
               <div
                 className={`
-                  bg-white shadow-md rounded-xl overflow-hidden 
+                  group bg-white shadow-md rounded-xl overflow-hidden 
                   transform transition duration-700 ease-in-out
                   ${mountedSlides.includes(idx) ? "opacity-100 scale-100" : "opacity-0 scale-95"}
                 `}
@@ -122,20 +140,48 @@ export const Services = () => {
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="w-full h-44 object-cover"
+                  className="w-full h-96 object-cover"
                 />
-                <div className="p-5 text-center">
-                  <div className="mb-2">
-                    <span className={service.icon}></span>
+
+                <div
+                  className="
+                    absolute top-[-20rem] left-4 right-4 bottom-[25rem]
+                    bg-white rounded-xl shadow-md 
+                    text-center p-5 
+                    transition-all duration-500 
+                    transform group-hover:top-4 group-hover:bottom-4
+                    flex justify-center flex-col
+                  "
+                >
+                  <div className="mb-2 flex justify-center">
+                    <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+                  
                   <p className="text-sm text-gray-600 mb-4">{service.desc}</p>
-                  <a
-                    href="#"
-                    className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300"
-                  >
-                    Read More
-                  </a>
+                  <div>
+                    <a
+                      href="#"
+                      className="inline-block border-blue-600 border-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-transparent hover:text-blue-600 font-semibold transition-colors duration-300"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  className="
+                    absolute bottom-4 left-4 right-4 
+                    bg-white rounded-xl shadow-md 
+                    text-center p-5 
+                    transition-all duration-500 
+                    transform group-hover:translate-y-[10rem]
+                  "
+                >
+                  <div className="mb-2 flex justify-center">
+                    <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
                 </div>
               </div>
             </SwiperSlide>

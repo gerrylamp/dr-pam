@@ -12,9 +12,9 @@ export const Home = () => {
       <Hero />
       <About />
       <Services />
+      <CTA />
       <Testimonials />
       <Blogs />
-      <CTA />
       <Contact />
     </main>
   );

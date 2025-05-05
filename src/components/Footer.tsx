@@ -28,7 +28,7 @@ export const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Brand */}
             <div>
-              <a href="/" className="text-3xl font-['Pacifico'] text-white mb-4 inline-block">
+              <a href="/" className="text-3xl !font-bold text-white mb-4 inline-block courgette-regular">
                 Dr. Pam Russell
               </a>
               <p className="text-white/80 mb-6">
@@ -70,12 +70,16 @@ export const Footer = () => {
             <div>
               <h4 className="text-xl font-semibold mb-6">Services</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Executive Coaching</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Organizational Consulting</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Life & Career Coaching</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Workshop Facilitation</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Wellness Coaching</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Group Coaching Programs</a></li>
+                <li><a href="/business-services" className="text-white/80 hover:text-white transition-colors">Business Services</a></li>
+                <li><a href="/personal-development" className="text-white/80 hover:text-white transition-colors">Personal Development</a></li>
+                <li><a href="/coaching" className="text-white/80 hover:text-white transition-colors">Coaching</a></li>
+                <li><a href="/pastoral-counseling" className="text-white/80 hover:text-white transition-colors">Pastoral Counseling</a></li>
+                <li><a href="/meditation" className="text-white/80 hover:text-white transition-colors">Meditation</a></li>
+                <li><a href="/anger-management" className="text-white/80 hover:text-white transition-colors">Anger management</a></li>
+                <li><a href="/publishing" className="text-white/80 hover:text-white transition-colors">Publishing</a></li>
+                <li><a href="/notary-services" className="text-white/80 hover:text-white transition-colors">Notary Services</a></li>
+                <li><a href="/training" className="text-white/80 hover:text-white transition-colors">Training</a></li>
+                <li><a href="/spiritual-connection" className="text-white/80 hover:text-white transition-colors">Spiritual Connection</a></li>
               </ul>
             </div>
 

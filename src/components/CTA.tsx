@@ -1,4 +1,5 @@
 import { useFadeIn } from "../hooks/useFadeIn";
+import { assets } from "../assets/assets";
 
 export const CTA = () => {
   const { ref, fadeInClass, style } = useFadeIn(0.2, 0); // 0.2 threshold, no delay
@@ -16,7 +17,15 @@ export const CTA = () => {
       ></div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-primary/80"></div>
+      {/* <div className="absolute inset-0 bg-primary/80"></div> */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url(${assets.office})` }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+
 
       {/* Animated Content */}
       <div className="container mx-auto px-4 relative z-10">

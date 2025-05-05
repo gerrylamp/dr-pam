@@ -30,7 +30,7 @@ export const About = () => {
   return <section id="about" className="py-16 md:py-24 bg-gray-50" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${sectionFade}`}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">
             About Dr. Pam Russell
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#0201BF] to-[#D11DD9] mx-auto"></div>
@@ -60,7 +60,7 @@ export const About = () => {
             </div>
           </div>
           <div ref={cardsRef} className={`space-y-6 ${cardsFade}`}>
-            {highlights.map((item, index) => <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex transform hover:scale-105 hover:-translate-y-1">
+            {highlights.map((item, index) => <div key={index} className="bg-white text-primary p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex transform hover:scale-105 hover:-translate-y-1">
                 <div className="mr-4 mt-1">{item.icon}</div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">{item.title}</h3>

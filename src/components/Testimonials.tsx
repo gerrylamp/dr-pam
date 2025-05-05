@@ -72,7 +72,7 @@ export const Testimonials = () => {
     <section id="testimonials" className="py-16 md:py-24 bg-[#0201BF]/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
         <div className={`text-center mb-12 ${fadeInClass}`}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Client Testimonials</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Client Testimonials</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#0201BF] to-[#D11DD9] mx-auto mb-6" />
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Hear from clients who have experienced the benefits of working with Dr. Pam Russell.

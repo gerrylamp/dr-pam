@@ -27,6 +27,7 @@ export const Hero = () => {
         />
       </div>
 
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Hero Text */}
@@ -83,7 +84,7 @@ export const Hero = () => {
             style={fadeRight.style}
           >
             <div
-              className="relative hover:scale-105 transition-all duration-500"
+              className="relative animate-float hover:scale-105 transition-all duration-500"
               style={{ transform: `translate(${-x}px, ${-y}px)` }}
             >
               <div className="absolute -inset-4 bg-gradient-to-r from-[#0201BF] to-[#D11DD9] rounded-full blur-xl opacity-70" />
@@ -96,6 +97,7 @@ export const Hero = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

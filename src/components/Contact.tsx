@@ -1,12 +1,31 @@
 import { useFadeIn } from "../hooks/useFadeIn";
+import { useParallax } from "../hooks/useParallax";
 
 export const Contact = () => {
   const headingFade = useFadeIn(0.2, 0);
   const infoFade = useFadeIn(0.2, 100);
   const formFade = useFadeIn(0.2, 200);
 
+  const { x, y } = useParallax(0.02);
+
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 relative">
+      {/* Background Blur Elements */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute right-0 top-0 w-1/2 h-1/2 bg-[#50F2FD] opacity-10 rounded-full blur-3xl"
+          style={{
+            transform: `translate(${x * 2}px, ${y * 2}px)`,
+          }}
+        />
+        <div
+          className="absolute left-0 bottom-0 w-1/2 h-1/2 bg-[#D11DD9] opacity-10 rounded-full blur-3xl"
+          style={{
+            transform: `translate(${-x * 2}px, ${-y * 2}px)`,
+          }}
+        />
+      </div>
+
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div
@@ -14,7 +33,7 @@ export const Contact = () => {
           className={`text-center mb-16 ${headingFade.fadeInClass}`}
           style={headingFade.style}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Get in Touch</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Have questions or ready to start your journey? Reach out to schedule a consultation or learn more about my services.
           </p>
