@@ -21,7 +21,7 @@ import { Store } from './pages/Store';
 import { Counseling } from './pages/Counseling';
 import { Business } from './pages/Business';
 import { NonProfit } from './pages/NonProfit';
-import { Profit } from './pages/PRofit';
+import { Profit } from './pages/Profit';
 
 export function App() {
   return (
