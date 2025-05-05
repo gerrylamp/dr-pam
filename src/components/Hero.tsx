@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightIcon } from "lucide-react";
 import { useParallax } from "../hooks/useParallax";
 import { useFadeIn } from "../hooks/useFadeIn";
+import { assets } from "../assets/assets";
 
 export const Hero = () => {
   const { x, y } = useParallax(0.02);
@@ -90,7 +91,7 @@ export const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-[#0201BF] to-[#D11DD9] rounded-full blur-xl opacity-70" />
               <div className="relative bg-white rounded-full p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src={assets.profile}
                   alt="Dr. Pam Russell"
                   className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full transform transition-all duration-500"
                 />

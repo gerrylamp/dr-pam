@@ -24,6 +24,7 @@ import PersonalDevelopmentIcon from './PersonalDevelopmentIcon.png'
 import PublishingIcon from './PublishingIcon.png'
 import SpiritualConnectionicon from './SpiritualConnectionicon.png'
 import TrainingIcon from './TrainingIcon.png'
+import profile from './profile.jpg'
 
 export const assets = {
     img1,
@@ -51,5 +52,6 @@ export const assets = {
     PersonalDevelopmentIcon,
     PublishingIcon,
     SpiritualConnectionicon,
-    TrainingIcon
+    TrainingIcon,
+    profile
 }
