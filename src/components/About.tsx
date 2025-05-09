@@ -60,7 +60,7 @@ export const About = () => {
             </div>
           </div>
           <div ref={cardsRef} className={`space-y-6 ${cardsFade}`}>
-            {highlights.map((item, index) => <div key={index} className="bg-white text-primary p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex transform hover:scale-105 hover:-translate-y-1">
+            {highlights.map((item, index) => <div key={index} className="bg-linear-gradient text-primary p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex transform hover:scale-105 hover:-translate-y-1">
                 <div className="mr-4 mt-1">{item.icon}</div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">{item.title}</h3>

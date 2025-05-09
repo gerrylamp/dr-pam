@@ -144,29 +144,32 @@ export const Services = () => {
                   loading="lazy"
                 />
 
+                
                 <div
                   className="
                     absolute top-[-20rem] left-4 right-4 bottom-[25rem]
                     bg-white rounded-xl shadow-md 
-                    text-center p-5 
+                    text-center
                     transition-all duration-500 
                     transform group-hover:top-4 group-hover:bottom-4
-                    flex justify-center flex-col
+                    
                   "
                 >
-                  <div className="mb-2 flex justify-center">
-                    <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
-                  
-                  <p className="text-sm text-gray-600 mb-4">{service.desc}</p>
-                  <div>
-                    <a
-                      href="#"
-                      className="inline-block border-blue-600 border-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-transparent hover:text-blue-600 font-semibold transition-colors duration-300"
-                    >
-                      Read More
-                    </a>
+                  <div className="bg-linear-gradient2 p-5 flex justify-center flex-col h-full">
+                    <div className="mb-2 flex justify-center">
+                      <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+                    
+                    <p className="text-sm text-gray-600 mb-4">{service.desc}</p>
+                    <div>
+                      <a
+                        href="#"
+                        className="inline-block border-blue-600 border-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-transparent hover:text-blue-600 font-semibold transition-colors duration-300"
+                      >
+                        Read More
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -174,15 +177,17 @@ export const Services = () => {
                   className="
                     absolute bottom-4 left-4 right-4 
                     bg-white rounded-xl shadow-md 
-                    text-center p-5 
+                    text-center
                     transition-all duration-500 
                     transform group-hover:translate-y-[10rem]
                   "
                 >
-                  <div className="mb-2 flex justify-center">
-                    <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
+                  <div className="bg-linear-gradient p-5">
+                    <div className="mb-2 flex justify-center">
+                      <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
                 </div>
               </div>
             </SwiperSlide>

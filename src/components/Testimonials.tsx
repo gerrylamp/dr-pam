@@ -80,37 +80,39 @@ export const Testimonials = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div
-            className={`bg-white rounded-2xl shadow-lg p-8 md:p-10 min-h-[250px] transition-opacity duration-500 ${
-              isFading ? "opacity-0" : "opacity-100"
-            }`}
-          >
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#6D38FF] to-[#D11DD9] rounded-full blur-sm opacity-70"></div>
-                <img
-                  src={testimonials[currentIndex].image}
-                  alt={testimonials[currentIndex].name}
-                  className="relative w-24 h-24 object-cover rounded-full"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="flex-1 text-center md:text-left">
-                <div className="flex justify-center md:justify-start mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon
-                      key={i}
-                      size={20}
-                      className="text-yellow-400 fill-current"
-                    />
-                  ))}
+          <div className="bg-white">
+            <div
+              className={`bg-linear-gradient rounded-2xl shadow-lg p-8 md:p-10 min-h-[250px] transition-opacity duration-500 ${
+                isFading ? "opacity-0" : "opacity-100"
+              }`}
+            >
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-[#6D38FF] to-[#D11DD9] rounded-full blur-sm opacity-70"></div>
+                  <img
+                    src={testimonials[currentIndex].image}
+                    alt={testimonials[currentIndex].name}
+                    className="relative w-24 h-24 object-cover rounded-full"
+                    loading="lazy"
+                  />
                 </div>
-                <blockquote className="text-lg italic text-gray-700 mb-6">
-                  "{testimonials[currentIndex].quote}"
-                </blockquote>
-                <p className="font-bold text-lg">{testimonials[currentIndex].name}</p>
-                <p className="text-gray-600">{testimonials[currentIndex].role}</p>
+
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <StarIcon
+                        key={i}
+                        size={20}
+                        className="text-yellow-400 fill-current"
+                      />
+                    ))}
+                  </div>
+                  <blockquote className="text-lg italic text-gray-700 mb-6">
+                    "{testimonials[currentIndex].quote}"
+                  </blockquote>
+                  <p className="font-bold text-lg">{testimonials[currentIndex].name}</p>
+                  <p className="text-gray-600">{testimonials[currentIndex].role}</p>
+                </div>
               </div>
             </div>
           </div>
