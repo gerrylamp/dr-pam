@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parallax Video Background</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Fixed Background Video */
+    .video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    /* Hero Section */
+    .hero-section {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    }
+
+    /* Overlay Text */
+    .hero-content {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+    }
+
+    .hero-content h1 {
+    font-size: 3rem;
+    }
+
+    .hero-content p {
+    font-size: 1.25rem;
+    }
+
+    /* Content Section (scrolls over) */
+    .content-section {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 5rem 2rem;
+    z-index: 2;
+    height: 100vh;
+    }
+
+  </style>
+</head>
+<body>
+    <!-- Pinned Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop playsinline class="video-bg">
+        <source src="/src/assets/hero-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+        <h1>Live With Purpose</h1>
+        <p>Transform your journey with faith, clarity, and guidance.</p>
+        </div>
+    </section>
+
+    <!-- Scrollable Content -->
+    <section class="content-section">
+        <h2>About Dr. Pam Russell</h2>
+        <p>Faith-based guidance and healing through personalized transformation.</p>
+    </section>
+</body>  
+</html>

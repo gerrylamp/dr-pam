@@ -83,12 +83,12 @@ export const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="py-12">
+    <section id="services" className="py-12 bg-gray-100/80 h-screen flex items-center justify-center">
       <div className="container mx-auto px-4">
         {/* Heading and Controls */}
         <div className="flex items-center justify-between flex-wrap mb-10">
           <div>
-            <h3 className="text-lg text-blue-600 uppercase courgette-regular">What We Do</h3>
+            {/* <h3 className="text-lg text-blue-600 uppercase courgette-regular">What We Do</h3> */}
             <h1 className="text-3xl font-bold bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Our Services</h1>
           </div>
           <div className="flex space-x-3 mt-4 md:mt-0">
@@ -141,6 +141,7 @@ export const Services = () => {
                   src={service.img}
                   alt={service.title}
                   className="w-full h-96 object-cover"
+                  loading="lazy"
                 />
 
                 <div

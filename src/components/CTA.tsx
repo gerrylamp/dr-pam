@@ -17,13 +17,13 @@ export const CTA = () => {
       ></div>
 
       {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-primary/80"></div> */}
-      <div
+      <div className="absolute inset-0 bg-primary/80"></div>
+      {/* <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url(${assets.office})` }}
       >
         <div className="absolute inset-0 bg-black/40" />
-      </div>
+      </div> */}
 
 
 

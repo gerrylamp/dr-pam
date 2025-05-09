@@ -69,7 +69,7 @@ export const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-[#0201BF]/5">
+    <section id="testimonials" className="py-16 md:py-24 bg-[#0201BF]/5 bg-gray-50/80 h-screen flex items-center justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
         <div className={`text-center mb-12 ${fadeInClass}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Client Testimonials</h2>
@@ -92,6 +92,7 @@ export const Testimonials = () => {
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
                   className="relative w-24 h-24 object-cover rounded-full"
+                  loading="lazy"
                 />
               </div>
 

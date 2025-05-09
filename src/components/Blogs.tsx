@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { assets } from "../assets/assets";
 
 export const Blogs = () => {
   const [visibleCards, setVisibleCards] = useState(false);
@@ -14,12 +15,23 @@ export const Blogs = () => {
   }, []);
 
   return (
-    <section id="blog" className="py-20">
-      <div className="container mx-auto px-4">
+    <section
+      id="blog"
+      className="py-20 bg-fixed bg-center bg-cover sticky top-0"
+      style={{
+        backgroundImage: `url(${assets.blog_bg})`,
+      }}
+    >
+
+      {/* Black overlay */}
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Insights & Resources</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          {/* <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#0201BF] via-[#6D38FF] to-[#D11DD9] bg-clip-text text-transparent">Insights & Resources</h2> */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-50">Insights & Resources</h2>
+          <p className="text-lg text-gray-100 max-w-3xl mx-auto">
             Practical articles, research, and tools to support your leadership and personal development journey.
           </p>
         </div>
@@ -84,6 +96,7 @@ export const Blogs = () => {
                     src={blog.image}
                     alt={blog.title}
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">

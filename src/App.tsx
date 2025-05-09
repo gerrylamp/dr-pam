@@ -25,7 +25,7 @@ import { Profit } from './pages/Profit';
 
 export function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-white">
+    <div className="flex flex-col min-h-screen w-full">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "flowbite": "^3.1.2",
+    "gsap": "^3.13.0",
     "jquery": "^3.7.1",
     "lucide-react": "^0.441.0",
     "owl.carousel": "^2.3.4",

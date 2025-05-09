@@ -15,47 +15,47 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-50 shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href='/' className="text-3xl !font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent courgette-regular">
-            <img className='w-24' src={assets.logo} alt="logo" />
+            <img className='w-24' src={assets.logo} alt="logo" loading='lazy' />
           </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-700 hover:text-[#D11DD9] font-medium transition duration-300">Home</a>
+            <a href="/" className={`${isScrolled ? 'text-gray-700' : 'text-gray-50'} hover:text-[#D11DD9] font-bold transition duration-300`}>Home</a>
             {/* About Dropdown */}
             <div className="relative group">
-              <a href='/about' className="text-gray-700 hover:text-[#D11DD9] font-medium flex items-center gap-1 transition duration-300">
+              <a href='/about' className={`${isScrolled ? 'text-gray-700' : 'text-gray-50'} hover:text-[#D11DD9] font-bold flex items-center gap-1 transition duration-300`}>
                 About
                 <ChevronDown size={16} />
               </a>
 
               {/* First-level dropdown */}
               <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">About me</a>
-                <a href="/why-choose" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Why choose</a>
-                <a href="/faq" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">FAQ</a>
-                <a href="/testimonials" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Testimonials</a>
-                <a href="/clients" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Clients</a>
+                <a href="/about" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">About me</a>
+                <a href="/why-choose" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Why choose</a>
+                <a href="/faq" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">FAQ</a>
+                <a href="/testimonials" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Testimonials</a>
+                <a href="/clients" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Clients</a>
               </div>
             </div>
 
             {/* Services Dropdown */}
             <div className="relative group">
-              <a href='/services' className="text-gray-700 hover:text-[#D11DD9] font-medium flex items-center gap-1 transition duration-300">
+              <a href='/services' className={`${isScrolled ? 'text-gray-700' : 'text-gray-50'} hover:text-[#D11DD9] font-bold flex items-center gap-1 transition duration-300`}>
                 Our Services
                 <ChevronDown size={16} />
               </a>
 
               {/* First-level dropdown */}
               <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <a href="/coaching" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Coaching</a>
-                <a href="/ministry" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Ministry</a>
-                <a href="/store" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Store</a>
-                <a href="/counseling" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Counseling</a>
+                <a href="/coaching" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Coaching</a>
+                <a href="/ministry" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Ministry</a>
+                <a href="/store" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Store</a>
+                <a href="/counseling" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Counseling</a>
 
                 {/* Nested Dropdown */}
                 {/* <div className="relative group/nested">
@@ -74,20 +74,20 @@ export const Navbar = () => {
 
             {/* Business Dropdown */}
             <div className="relative group">
-              <a href='/business' className="text-gray-700 hover:text-[#D11DD9] font-medium flex items-center gap-1 transition duration-300">
+              <a href='/business' className={`${isScrolled ? 'text-gray-700' : 'text-gray-50'} hover:text-[#D11DD9] font-bold flex items-center gap-1 transition duration-300`}>
                 Business
                 <ChevronDown size={16} />
               </a>
 
               {/* First-level dropdown */}
               <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <a href="/non-profit" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Non-Profit</a>
-                <a href="/profit" className="block px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Profit</a>
+                <a href="/non-profit" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Non-Profit</a>
+                <a href="/profit" className="block font-bold px-4 py-2 text-gray-700 hover:bg-[#0201BF] hover:text-white transition duration-500">Profit</a>
               </div>
             </div>
 
-            <a href="/contact" className="text-gray-700 hover:text-[#D11DD9] font-medium transition duration-300">Contact Us</a>
-            <a href="/contact" className="bg-[#0201BF] hover:bg-[#6D38FF] text-white px-6 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all duration-300">
+            <a href="/contact" className={`${isScrolled ? 'text-gray-700' : 'text-gray-50'} hover:text-[#D11DD9] font-bold transition duration-300`}>Contact Us</a>
+            <a href="/contact" className="bg-[#0201BF] hover:bg-[#6D38FF] text-white px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300">
               Book Now
             </a>
           </div>
@@ -108,7 +108,7 @@ export const Navbar = () => {
             <a
               key={link}
               href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
-              className="block text-gray-700 hover:text-[#D11DD9] font-medium transition duration-300"
+              className="block text-gray-700 hover:text-[#D11DD9] font-bold transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               {link}

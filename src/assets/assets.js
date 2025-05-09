@@ -1,19 +1,15 @@
-import img1 from './img1.jpg'
-import img2 from './img2.png'
-import img3 from './img3.jpg'
-import img4 from './img4.jpg'
 import logo from './logo.png'
-import office from './office.jpg'
-import BusinessServices from './BusinessServices.jpg'
-import PersonalDevelopment from './PersonalDevelopment.jpg'
-import Coaching from './Coaching.jpg'
-import PastoralCounseling from './PastoralCounseling.jpg'
-import Meditation from './Meditation.jpg'
-import AngerManagement from './AngerManagement.jpg'
-import Publishing from './Publishing.jpg'
-import NotaryServices from './NotaryServices.jpg'
-import Training from './Training.jpg'
-import SpiritualConnection from './SpiritualConnection.jpg'
+import office from './office.webp'
+import BusinessServices from './BusinessServices.webp'
+import PersonalDevelopment from './PersonalDevelopment.webp'
+import Coaching from './Coaching.webp'
+import PastoralCounseling from './PastoralCounseling.webp'
+import Meditation from './Meditation.webp'
+import AngerManagement from './AngerManagement.webp'
+import Publishing from './Publishing.webp'
+import NotaryServices from './NotaryServices.webp'
+import Training from './Training.webp'
+import SpiritualConnection from './SpiritualConnection.webp'
 import AngerManagementIcon from './AngerManagementIcon.png'
 import BusinessServicesIcon from './BusinessServicesIcon.png'
 import CoachingIcon from './CoachingIcon.png'
@@ -25,12 +21,10 @@ import PublishingIcon from './PublishingIcon.png'
 import SpiritualConnectionicon from './SpiritualConnectionicon.png'
 import TrainingIcon from './TrainingIcon.png'
 import profile from './profile.jpg'
+import blog_bg from './blog-bg.webp'
+import heroBgVideo from './hero-bg.mp4'
 
 export const assets = {
-    img1,
-    img2,
-    img3,
-    img4,
     logo,
     office,
     BusinessServices,
@@ -53,5 +47,7 @@ export const assets = {
     PublishingIcon,
     SpiritualConnectionicon,
     TrainingIcon,
-    profile
+    profile,
+    heroBgVideo,
+    blog_bg
 }
