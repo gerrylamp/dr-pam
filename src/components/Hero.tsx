@@ -19,7 +19,7 @@ export const Hero = () => {
       </video>
 
       {/* Black overlay */}
-      <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
       <section className="flex items-center relative min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 parallax-video">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
