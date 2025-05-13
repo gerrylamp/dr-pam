@@ -87,11 +87,11 @@ export const Blogs = () => {
             .map((blog, idx) => (
               <div
                 key={idx}
-                className={`blog-card bg-white rounded-lg shadow-md overflow-hidden transform transition duration-700 ease-out hover:shadow-xl hover:-translate-y-1 ${
+                className={`bg-linear-gradient blog-card bg-white rounded-lg shadow-md overflow-hidden transform transition duration-700 ease-out hover:shadow-xl hover:-translate-y-1 ${
                   visibleCards ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
                 }`}
               >
-                <div className="bg-linear-gradient">
+                <div>
                   <div className="h-48 overflow-hidden group">
                     <img
                       src={blog.image}
