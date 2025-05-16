@@ -87,33 +87,35 @@ export const Blogs = () => {
             .map((blog, idx) => (
               <div
                 key={idx}
-                className={`blog-card bg-white rounded-lg shadow-md overflow-hidden transform transition duration-700 ease-out hover:shadow-xl hover:-translate-y-1 ${
+                className={`bg-linear-gradient blog-card bg-white rounded-lg shadow-md overflow-hidden transform transition duration-700 ease-out hover:shadow-xl hover:-translate-y-1 ${
                   visibleCards ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
                 }`}
               >
-                <div className="h-48 overflow-hidden group">
-                  <img
-                    src={blog.image}
-                    alt={blog.title}
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center mb-3">
-                    <span className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
-                      {blog.category}
-                    </span>
-                    <span className="text-xs text-gray-500 ml-3">{blog.date}</span>
+                <div>
+                  <div className="h-48 overflow-hidden group">
+                    <img
+                      src={blog.image}
+                      alt={blog.title}
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{blog.title}</h3>
-                  <p className="text-gray-600 mb-4">{blog.excerpt}</p>
-                  <a
-                    href="/blog-single-page"
-                    className="inline-block text-primary font-medium hover:text-purple transition-colors gradient-border"
-                  >
-                    Read More
-                  </a>
+                  <div className="p-6">
+                    <div className="flex items-center mb-3">
+                      <span className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
+                        {blog.category}
+                      </span>
+                      <span className="text-xs text-gray-500 ml-3">{blog.date}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3">{blog.title}</h3>
+                    <p className="text-gray-600 mb-4">{blog.excerpt}</p>
+                    <a
+                      href="/blog-single-page"
+                      className="inline-block text-primary font-medium hover:text-purple transition-colors gradient-border"
+                    >
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

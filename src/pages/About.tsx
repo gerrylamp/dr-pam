@@ -1,7 +1,9 @@
+import { useFadeIn } from "../hooks/useFadeIn";
+import { assets } from "../assets/assets";
+import { Hero } from "../components/About/Hero";
+
 export const AboutMe = () => {
-    return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">About Me</h1>
-        </div>
-    )
-}
+  return (
+    <Hero />
+  );    
+};

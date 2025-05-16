@@ -169,3 +169,12 @@
         flex: 0 0 100vw;
         /* height: 100vh; */
       }
+    .bg-linear-gradient {
+        background-image: linear-gradient(to top, #0000ff20, transparent);
+    }
+    .bg-linear-gradient2 {
+        background-image: linear-gradient(to bottom, #0000ff20, transparent);
+    }
+    .h-webkit-fill{
+        height: -webkit-fill-available;
+    }
