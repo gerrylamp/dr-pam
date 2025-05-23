@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs | Dr. Pamela Russell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out;
+    }
+
+    .faq-toggle.open + .faq-answer {
+      max-height: 500px; /* or a high enough value for content */
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Hero -->
+  <section class="relative h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white text-center px-6"
+    style="background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(29,78,216,0.7)), url('https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg');">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
+      <p class="text-lg max-w-2xl mx-auto">Answers to common questions. Still need help? Reach out anytime.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8" data-aos="fade-up">General Questions</h2>
+
+      <!-- FAQ Item -->
+      <div class="mb-6 border-b pb-4">
+        <button class="faq-toggle w-full text-left font-semibold text-lg flex justify-between items-center open">
+          What services do you offer?
+          <span class="toggle-icon text-xl transition">–</span>
+        </button>
+        <div class="faq-answer mt-2 text-gray-700 open">
+          I offer life coaching, business consulting, spiritual counseling, publishing services, mediation, and more. Each service is personalized to your goals.
+        </div>
+      </div>
+
+      <div class="mb-6 border-b pb-4">
+        <button class="faq-toggle w-full text-left font-semibold text-lg flex justify-between items-center">
+          Are sessions available online?
+          <span class="toggle-icon text-xl transition">+</span>
+        </button>
+        <div class="faq-answer mt-2 text-gray-700">
+          Yes, sessions can be conducted via Zoom or phone depending on your location and preference.
+        </div>
+      </div>
+
+      <div class="mb-6 border-b pb-4">
+        <button class="faq-toggle w-full text-left font-semibold text-lg flex justify-between items-center">
+          Do you work with organizations as well as individuals?
+          <span class="toggle-icon text-xl transition">+</span>
+        </button>
+        <div class="faq-answer mt-2 text-gray-700">
+          Absolutely. I provide consulting and development services for nonprofits, churches, and businesses looking to grow strategically and spiritually.
+        </div>
+      </div>
+
+      <div class="mb-6 border-b pb-4">
+        <button class="faq-toggle w-full text-left font-semibold text-lg flex justify-between items-center">
+          How can I book a session?
+          <span class="toggle-icon text-xl transition">+</span>
+        </button>
+        <div class="faq-answer mt-2 text-gray-700">
+          You can visit the Contact page or click “Book a Consultation” anywhere on the site to schedule your first session.
+        </div>
+      </div>
+
+      <div class="mb-6 border-b pb-4">
+        <button class="faq-toggle w-full text-left font-semibold text-lg flex justify-between items-center">
+          What’s your faith background?
+          <span class="toggle-icon text-xl transition">+</span>
+        </button>
+        <div class="faq-answer mt-2 text-gray-700">
+          I’m a third-generation preacher and ordained minister with a deep commitment to biblical principles and holistic development — spiritually, personally, and professionally.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Still Have Questions CTA -->
+  <section class="bg-gray-50 py-16 text-center px-6" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4">Still have questions?</h2>
+    <p class="text-lg text-gray-700 max-w-xl mx-auto mb-6">I’m here to help. Whether you’re curious about coaching, need help navigating life transitions, or want guidance for your business, let’s talk.</p>
+    <a href="/contact" class="inline-block px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-700 text-white rounded-full font-semibold transition">
+      Contact Me
+    </a>
+  </section>
+
+  <!-- JS for AOS + Accordion -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggles = document.querySelectorAll(".faq-toggle");
+
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const isOpen = toggle.classList.contains("open");
+          const icon = toggle.querySelector(".toggle-icon");
+          const answer = toggle.nextElementSibling;
+
+          if (isOpen) {
+            toggle.classList.remove("open");
+            answer.classList.remove("open");
+            icon.textContent = "+";
+          } else {
+            // Optionally close others
+            toggles.forEach((other) => {
+              other.classList.remove("open");
+              other.nextElementSibling.classList.remove("open");
+              other.querySelector(".toggle-icon").textContent = "+";
+            });
+
+            toggle.classList.add("open");
+            answer.classList.add("open");
+            icon.textContent = "–";
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

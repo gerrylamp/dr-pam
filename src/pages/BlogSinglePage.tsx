@@ -1,7 +1,15 @@
+import { BlogContent } from "../components/BlogSinglePage/BlogContent"
+import { CTA } from "../components/BlogSinglePage/CTA"
+import { Hero } from "../components/BlogSinglePage/Hero"
+import { Note } from "../components/BlogSinglePage/Note"
+
 export const BlogSinglePage = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Blog Single Page</h1>
-        </div>
+        <>
+            <Hero />
+            <Note />
+            <BlogContent />
+            <CTA />
+        </>
     )
 }

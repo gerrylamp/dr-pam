@@ -1,7 +1,17 @@
+import { Contact } from "../components/Contact"
+import { CTA } from "../components/Services/CTA"
+import { Hero } from "../components/Services/Hero"
+import { Process } from "../components/Services/Process"
+import { ServicesGrid } from "../components/Services/ServicesGrid"
+
 export const Services = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Services</h1>
-        </div>
+        <>
+            <Hero />
+            <ServicesGrid />
+            <Process />
+            <CTA />
+            <Contact />
+        </>
     )
 }

@@ -1,7 +1,17 @@
+import { Contact } from "../components/Contact"
+import { ApproachStatement } from "../components/Counseling/ApproachStatement"
+import { CTA } from "../components/Counseling/CTA"
+import { Hero } from "../components/Counseling/Hero"
+import { Overview } from "../components/Counseling/Overview"
+
 export const Counseling = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Counseling</h1>
-        </div>
+        <>
+            <Hero />
+            <Overview />
+            <ApproachStatement />
+            <CTA />
+            <Contact />
+        </>
     )
 }

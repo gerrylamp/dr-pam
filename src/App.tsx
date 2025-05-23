@@ -7,7 +7,7 @@ import { Blog } from './pages/Blog';
 import { Services } from './pages/Services';
 import { AboutMe } from './pages/About';
 import { Testimonials } from './pages/Testimonials';
-import { Contact } from './pages/Contact';
+import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { CookiePolicy } from './pages/CookiePolicy';
@@ -43,7 +43,7 @@ export function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/services" element={<Services />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />

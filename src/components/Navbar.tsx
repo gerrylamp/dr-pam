@@ -28,10 +28,10 @@ export const Navbar = () => {
             <a href="/" className="text-gray-700 hover:text-[#D11DD9] font-bold transition duration-300">Home</a>
             {/* About Dropdown */}
             <div className="relative group">
-              <a href='/about' className="text-gray-700 hover:text-[#D11DD9] font-bold flex items-center gap-1 transition duration-300">
+              <p className="text-gray-700 hover:text-[#D11DD9] font-bold flex items-center gap-1 transition duration-300">
                 About
                 <ChevronDown size={16} />
-              </a>
+              </p>
 
               {/* First-level dropdown */}
               <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
