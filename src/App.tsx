@@ -22,6 +22,7 @@ import { Counseling } from './pages/Counseling';
 import { Business } from './pages/Business';
 import { NonProfit } from './pages/NonProfit';
 import { Profit } from './pages/Profit';
+import { ServiceSinglePage } from './pages/ServiceSinglePage';
 
 export function App() {
   return (
@@ -48,6 +49,7 @@ export function App() {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/blog-single-page" element={<BlogSinglePage />} />
+        <Route path="/service-single-page" element={<ServiceSinglePage />} />
       </Routes>
       <Footer />
     </div>

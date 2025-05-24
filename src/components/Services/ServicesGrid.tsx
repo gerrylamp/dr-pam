@@ -13,32 +13,38 @@ export const ServicesGrid = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                         <div className="p-6 border rounded-xl shadow hover:shadow-lg transition" >
                             <h3 className="text-xl font-semibold text-indigo-700 mb-2">Life & Purpose Coaching</h3>
-                            <p className="text-gray-600">1-on-1 sessions to help individuals discover purpose, build confidence, and pursue meaningful goals.</p>
+                            <p className="text-gray-600 mb-2">1-on-1 sessions to help individuals discover purpose, build confidence, and pursue meaningful goals.</p>
+                            <a href="/service-single-page" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
                         </div>
 
                         <div className="p-6 border rounded-xl shadow hover:shadow-lg transition"  >
                             <h3 className="text-xl font-semibold text-indigo-700 mb-2">Spiritual Counseling</h3>
-                            <p className="text-gray-600">Faith-based guidance for emotional healing, spiritual growth, and navigating life transitions.</p>
+                            <p className="text-gray-600 mb-2">Faith-based guidance for emotional healing, spiritual growth, and navigating life transitions.</p>
+                            <a href="/service-single-page" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
                         </div>
 
                         <div className="p-6 border rounded-xl shadow hover:shadow-lg transition"  >
                             <h3 className="text-xl font-semibold text-indigo-700 mb-2">Business & Nonprofit Consulting</h3>
-                            <p className="text-gray-600">Strategic support for founders, ministries, and startups to grow with structure, clarity, and purpose.</p>
+                            <p className="text-gray-600 mb-2">Strategic support for founders, ministries, and startups to grow with structure, clarity, and purpose.</p>
+                            <a href="/service-single-page" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
                         </div>
 
                         <div className="p-6 border rounded-xl shadow hover:shadow-lg transition" >
                             <h3 className="text-xl font-semibold text-indigo-700 mb-2">Workshops & Leadership Training</h3>
-                            <p className="text-gray-600">Interactive workshops for teams and leaders on communication, alignment, and spiritual leadership.</p>
+                            <p className="text-gray-600 mb-2">Interactive workshops for teams and leaders on communication, alignment, and spiritual leadership.</p>
+                            <a href="/service-single-page" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
                         </div>
 
                         <div className="p-6 border rounded-xl shadow hover:shadow-lg transition"  >
                             <h3 className="text-xl font-semibold text-indigo-700 mb-2">Publishing & Book Consulting</h3>
-                            <p className="text-gray-600">From writing to printing, I support aspiring authors in telling their stories with confidence and professionalism.</p>
+                            <p className="text-gray-600 mb-2">From writing to printing, I support aspiring authors in telling their stories with confidence and professionalism.</p>
+                            <a href="/service-single-page" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
                         </div>
 
                         <div className="p-6 border rounded-xl shadow hover:shadow-lg transition"  >
                             <h3 className="text-xl font-semibold text-indigo-700 mb-2">Notary Services</h3>
-                            <p className="text-gray-600">Quick, professional notary services for local clients in a faith-led, trustworthy environment.</p>
+                            <p className="text-gray-600 mb-2">Quick, professional notary services for local clients in a faith-led, trustworthy environment.</p>
+                            <a href="/service-single-page" className="text-indigo-600 font-semibold hover:underline">Learn more →</a>
                         </div>
                     </div>
                 </div>
