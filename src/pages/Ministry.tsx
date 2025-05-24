@@ -1,7 +1,17 @@
+import { Contact } from "../components/Contact"
+import { CTA } from "../components/Ministry/CTA"
+import { Hero } from "../components/Ministry/Hero"
+import { MinistryMissionStatement } from "../components/Ministry/MinistryMissionStatement"
+import { MinistryServiceArea } from "../components/Ministry/MinistryServiceArea"
+
 export const Ministry = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Ministry</h1>
-        </div>
+        <>
+            <Hero />
+            <MinistryServiceArea />
+            <MinistryMissionStatement />
+            <CTA />
+            <Contact />
+        </>
     )
 }

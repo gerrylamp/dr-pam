@@ -1,7 +1,17 @@
+import { CTA } from "../components/Business/CTA"
+import { Hero } from "../components/Business/Hero"
+import { ImpactHighlights } from "../components/Business/ImpactHighlights"
+import { Introduction } from "../components/Business/Introduction"
+import { Contact } from "../components/Contact"
+
 export const Business = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Business</h1>
-        </div>
+        <>
+            <Hero />
+            <Introduction />
+            <ImpactHighlights />
+            <CTA />
+            <Contact />
+        </>
     )
 }

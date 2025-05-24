@@ -10,7 +10,7 @@ export const Contact = () => {
   const { x, y } = useParallax(0.02);
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 relative">
+    <section id="contact" className="py-20 bg-gray-50 relative z-[1]">
       {/* Background Blur Elements */}
       <div className="absolute inset-0 z-0">
         <div
@@ -135,7 +135,7 @@ export const Contact = () => {
           </div>
 
           <div ref={videoFade.ref} className={`z-10 ${videoFade.fadeInClass}`} style={videoFade.style}>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5_lIAaMPX9k?si=yhFvSba5ZdzCY-qL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5_lIAaMPX9k?si=yhFvSba5ZdzCY-qL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
         </div>
 

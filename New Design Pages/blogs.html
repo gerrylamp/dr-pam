@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Dr. Pamela Russell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Hero Section -->
+  <section class="relative h-[450px] bg-cover bg-center flex items-center justify-center text-white text-center px-6"
+    style="background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(29,78,216,0.7)), url('https://images.pexels.com/photos/3184308/pexels-photo-3184308.jpeg');">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">Insights & Inspiration</h1>
+      <p class="text-lg max-w-2xl mx-auto">Devotionals, leadership wisdom, life coaching tips, and encouragement for the journey.</p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-2xl font-bold mb-4">Latest Articles</h2>
+      <p class="text-gray-600">Explore thoughts from Dr. Pam on personal growth, spiritual development, and kingdom-minded leadership.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- Blog Card -->
+      <article class="border rounded-xl shadow hover:shadow-md transition overflow-hidden text-left">
+        <img src="/images/blog1.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-sm text-fuchsia-700 uppercase font-semibold mb-2">Faith & Life</p>
+          <h3 class="text-lg font-semibold mb-2 text-indigo-800">When God Says Wait: Finding Peace in Delay</h3>
+          <p class="text-gray-600 text-sm mb-4">What do you do when you're ready but the breakthrough hasn't come yet? Let's talk about delay, trust, and divine timing...</p>
+          <a href="#" class="text-indigo-700 font-semibold hover:underline">Read More →</a>
+        </div>
+      </article>
+
+      <article class="border rounded-xl shadow hover:shadow-md transition overflow-hidden text-left">
+        <img src="/images/blog2.jpg" alt="Blog Post 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-sm text-fuchsia-700 uppercase font-semibold mb-2">Leadership</p>
+          <h3 class="text-lg font-semibold mb-2 text-indigo-800">Leading Without Losing Yourself</h3>
+          <p class="text-gray-600 text-sm mb-4">How to lead others effectively while maintaining your identity, energy, and spiritual rhythm...</p>
+          <a href="#" class="text-indigo-700 font-semibold hover:underline">Read More →</a>
+        </div>
+      </article>
+
+      <article class="border rounded-xl shadow hover:shadow-md transition overflow-hidden text-left">
+        <img src="/images/blog3.jpg" alt="Blog Post 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-sm text-fuchsia-700 uppercase font-semibold mb-2">Purpose</p>
+          <h3 class="text-lg font-semibold mb-2 text-indigo-800">Purpose Is Not a Destination</h3>
+          <p class="text-gray-600 text-sm mb-4">Many people wait for purpose like a sign. But purpose is already inside you — let’s uncover how it shows up daily...</p>
+          <a href="#" class="text-indigo-700 font-semibold hover:underline">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Newsletter Signup (Optional) -->
+  <section class="bg-fuchsia-50 py-16 text-center px-6">
+    <h2 class="text-2xl font-bold mb-4">Stay Encouraged</h2>
+    <p class="text-gray-700 max-w-xl mx-auto mb-6">Join Dr. Pam’s mailing list to receive new articles, event updates, and inspiration straight to your inbox.</p>
+    <form class="max-w-md mx-auto flex flex-col sm:flex-row items-center gap-4">
+      <input type="email" placeholder="Your email address" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+      <button type="submit" class="px-6 py-3 bg-indigo-900 text-white rounded-md hover:bg-indigo-800 transition">Subscribe</button>
+    </form>
+  </section>
+
+</body>
+</html>

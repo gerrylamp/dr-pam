@@ -1,7 +1,17 @@
+import { Contact } from "../components/Contact"
+import { CTA } from "../components/NonProfit/CTA"
+import { Hero } from "../components/NonProfit/Hero"
+import { ImpactHighlights } from "../components/NonProfit/ImpactHighlights"
+import { Introduction } from "../components/NonProfit/Introduction"
+
 export const NonProfit = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Non-Profit</h1>
-        </div>
+        <>
+            <Hero />
+            <Introduction />
+            <ImpactHighlights />
+            <CTA />
+            <Contact />
+        </>
     )
 }

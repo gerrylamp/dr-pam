@@ -1,7 +1,17 @@
+import { CoachingBenefits } from "../components/Coaching/CoachingBenefits"
+import { CoachingProcess } from "../components/Coaching/CoachingProcess"
+import { CTA } from "../components/Coaching/CTA"
+import { Hero } from "../components/Coaching/Hero"
+import { Contact } from "../components/Contact"
+
 export const Coaching = () => {
     return (
-        <div className="h-96 flex items-center container mx-auto">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#0201BF] to-[#6D38FF] bg-clip-text text-transparent">Coaching</h1>
-        </div>
+        <>
+            <Hero />
+            <CoachingBenefits />
+            <CoachingProcess />
+            <CTA />
+            <Contact />
+        </>
     )
 }
