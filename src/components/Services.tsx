@@ -164,7 +164,7 @@ export const Services = () => {
                     <p className="text-sm text-gray-600 mb-4">{service.desc}</p>
                     <div>
                       <a
-                        href="#"
+                        href="/service-single-page"
                         className="inline-block border-blue-600 border-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-transparent hover:text-blue-600 font-semibold transition-colors duration-300"
                       >
                         Read More
