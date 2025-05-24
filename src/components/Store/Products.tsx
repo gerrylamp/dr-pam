@@ -16,7 +16,7 @@ export const Products = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
                         {/* <!-- Product Card --> */}
                         <div className="border rounded-xl shadow hover:shadow-md transition p-6 text-left">
-                            <img src="/images/book1.jpg" alt="Product 1" className="w-full h-64 object-cover rounded-md mb-4" />
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1649882462i/60808035.jpg" alt="Product 1" className="w-full h-64 object-contain rounded-md mb-4" />
                             <h3 className="text-lg font-semibold text-indigo-800 mb-1">Living on Purpose: A 30-Day Devotional</h3>
                             <p className="text-sm text-gray-500 mb-3">A daily journey to reconnect with your calling and refresh your spirit.</p>
                             <p className="font-bold text-fuchsia-700 mb-4">$12.99</p>
@@ -24,7 +24,7 @@ export const Products = () => {
                         </div>
 
                         <div className="border rounded-xl shadow hover:shadow-md transition p-6 text-left">
-                            <img src="/images/book2.jpg" alt="Product 2" className="w-full h-64 object-cover rounded-md mb-4" />
+                            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQNs1j7bRFo0zlqwUEC2lpq7T0Gi3rLaUdAdaaOpvVFxJThleRzWoM4fvguubDvQiRRbN1WYTnWdQFJOVULh4TSJIoLNcHDTXBktAMue2I" alt="Product 2" className="w-full h-64 object-contain rounded-md mb-4" />
                             <h3 className="text-lg font-semibold text-indigo-800 mb-1">From Vision to Vessel: Ministry Planning Guide</h3>
                             <p className="text-sm text-gray-500 mb-3">Practical steps to launch or grow your God-given vision with structure and prayer.</p>
                             <p className="font-bold text-fuchsia-700 mb-4">$24.99</p>
@@ -32,7 +32,7 @@ export const Products = () => {
                         </div>
 
                         <div className="border rounded-xl shadow hover:shadow-md transition p-6 text-left">
-                            <img src="/images/course.jpg" alt="Product 3" className="w-full h-64 object-cover rounded-md mb-4" />
+                            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQo3Zz4-GSqf7ERlQPdFNY2TKAVyWCqU9Zm8JqCvkFfkwdapfzcvgXZou1Irg71wLv6znyud_I3ErDeokBthL7p-o8in7BMJXcbcAGWy9TDHobhg9fhZkHf" alt="Product 3" className="w-full h-64 object-contain rounded-md mb-4" />
                             <h3 className="text-lg font-semibold text-indigo-800 mb-1">Purpose Coaching Mini-Course</h3>
                             <p className="text-sm text-gray-500 mb-3">Self-paced online course to clarify your path and take confident action.</p>
                             <p className="font-bold text-fuchsia-700 mb-4">$49.00</p>
