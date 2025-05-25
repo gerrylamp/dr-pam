@@ -70,16 +70,16 @@ export const Footer = () => {
             <div>
               <h4 className="text-xl font-semibold mb-6">Services</h4>
               <ul className="space-y-3">
-                <li><a href="/business-services" className="text-white/80 hover:text-white transition-colors">Business Services</a></li>
-                <li><a href="/personal-development" className="text-white/80 hover:text-white transition-colors">Personal Development</a></li>
-                <li><a href="/coaching" className="text-white/80 hover:text-white transition-colors">Coaching</a></li>
-                <li><a href="/pastoral-counseling" className="text-white/80 hover:text-white transition-colors">Pastoral Counseling</a></li>
-                <li><a href="/meditation" className="text-white/80 hover:text-white transition-colors">Meditation</a></li>
-                <li><a href="/anger-management" className="text-white/80 hover:text-white transition-colors">Anger management</a></li>
-                <li><a href="/publishing" className="text-white/80 hover:text-white transition-colors">Publishing</a></li>
-                <li><a href="/notary-services" className="text-white/80 hover:text-white transition-colors">Notary Services</a></li>
-                <li><a href="/training" className="text-white/80 hover:text-white transition-colors">Training</a></li>
-                <li><a href="/spiritual-connection" className="text-white/80 hover:text-white transition-colors">Spiritual Connection</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Business Services</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Personal Development</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Coaching</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Pastoral Counseling</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Meditation</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Anger management</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Publishing</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Notary Services</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Training</a></li>
+                <li><a href="/service-single-page" className="text-white/80 hover:text-white transition-colors">Spiritual Connection</a></li>
               </ul>
             </div>
 
