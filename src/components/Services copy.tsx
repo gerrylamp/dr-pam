@@ -19,96 +19,57 @@ const serviceData = [
   },
   {
     title: "Personal Development",
-    desc: "Tools and strategies to help you become your best self — emotionally, spiritually, and practically.",
+    desc: "Tailored coaching programs to help you grow, gain clarity, and reach your full potential in life and career.",
     img: assets.PersonalDevelopment,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.5v15m7.5-7.5h-15" />
-        </svg>
-    )
+    icon: assets.PersonalDevelopmentIcon,
   },
   {
     title: "Coaching",
-    desc: "One-on-one sessions to help clarify vision, set goals, and take action with confidence and faith.",
+    desc: "Personalized coaching to inspire transformation, build resilience, and support sustained progress.",
     img: assets.Coaching,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="9" stroke-width="1.5" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7v5l3 2" />
-        </svg>
-    )
+    icon: assets.CoachingIcon,
   },
   {
     title: "Pastoral Counseling",
-    desc: "Faith-based emotional and spiritual support for individuals navigating grief, anxiety, or life transitions.",
+    desc: "Faith-informed counseling to nurture emotional, spiritual, and relational well-being.",
     img: assets.PastoralCounseling,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4zm0-6C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
-        </svg>
-    )
+    icon: assets.PastoralCounselingIcon,
   },
   {
     title: "Meditation",
-    desc: "Neutral, faith-guided resolution for individuals or teams in conflict — promoting understanding and peace.",
+    desc: "Guided meditation sessions to cultivate mindfulness, focus, and inner peace in a busy world.",
     img: assets.Meditation,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6M5 4h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z"/>
-        </svg>
-    )
+    icon: assets.MeditationIcon,
   },
   {
     title: "Anger Management",
-    desc: "Christ-centered programs to help you manage emotional responses and build healthy communication patterns.",
+    desc: "Strategies to identify triggers, manage emotional responses, and build healthier relationships.",
     img: assets.AngerManagement,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" stroke-width="1.5" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 9h.01M9 9h.01M8 15c1.5-1 6-1 8 0" />
-        </svg>
-    )
+    icon: assets.AngerManagementIcon,
   },
   {
     title: "Publishing",
-    desc: "Support for aspiring authors — from manuscript coaching to publishing and promotion.",
+    desc: "Support for authors and speakers in editing, designing, and launching impactful publications.",
     img: assets.Publishing,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-        </svg>
-    )
+    icon: assets.PublishingIcon,
   },
   {
     title: "Notary Services",
-    desc: "Quick, local notarization with professionalism and integrity.",
+    desc: "Trusted and efficient notarial services for personal and business documentation.",
     img: assets.NotaryServices,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 4.5h13.5v15H5.25z" />
-        </svg>
-    )
+    icon: assets.NotaryServicesicon,
   },
   {
     title: "Training",
-    desc: "Leadership, ministry, and organizational development sessions tailored for transformation.",
+    desc: "Engaging workshops and programs to upskill teams and empower individual performance.",
     img: assets.Training,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2" />
-        </svg>
-    )
+    icon: assets.TrainingIcon,
   },
   {
     title: "Spiritual Connection",
-    desc: "Helping you reconnect with your spiritual walk, prayer life, and divine purpose through guided sessions.",
+    desc: "Sessions that help you reconnect with your values, purpose, and inner wisdom.",
     img: assets.SpiritualConnection,
-    icon: (
-        <svg className="w-10 h-10 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" stroke-width="1.5" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 2" />
-        </svg>
-    )
+    icon: assets.SpiritualConnectionicon,
   },
 ];
 
@@ -200,11 +161,10 @@ export const Services = () => {
                 >
                   <div className="bg-linear-gradient2 p-5 flex justify-center flex-col h-full">
                     <div className="mb-2 flex justify-center">
-                      {/* <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} /> */}
-                      {service.icon}
+                      <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
                     </div>
 
-                    <h3 className="text-[1vw] font-semibold text-gray-800 mb-2">{service.title}</h3>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
                     <p className="text-sm text-gray-600 mb-4">{service.desc}</p>
 
                     <div>
@@ -229,10 +189,9 @@ export const Services = () => {
                 >
                   <div className="bg-linear-gradient p-5">
                     <div className="mb-2 flex justify-center">
-                      {/* <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} /> */}
-                      {service.icon}
+                      <img className="w-16 h-16" src={service.icon} alt={`${service.title} icon`} />
                     </div>
-                    <h3 className="text-[1vw] font-semibold text-gray-800">{service.title}</h3>
+                    <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
                   </div>
                 </div>
               </div>
